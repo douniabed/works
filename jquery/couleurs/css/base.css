@@ -1,0 +1,19 @@
+@import "reset.css";
+
+body {
+	margin: 50px;
+}
+
+h1 {
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+li {
+	margin-top: 5px;
+}
+
+#error {
+	color: #f00;
+	margin: 10px 0;
+}

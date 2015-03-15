@@ -1,0 +1,66 @@
+@import "reset.css";
+
+
+#radios,
+#datepicker {
+	margin: 20px;
+}
+
+
+/*
+ * Radios
+ */
+
+#radios input {
+	position: absolute;
+	left: -9999px;
+}
+
+#radios label {
+	position: relative;
+	padding: 2px 20px 0 30px;
+	cursor: pointer;
+}
+
+#radios label:before {
+	content: "";
+	width: 20px;
+	height: 20px;
+	border-radius: 100%;
+	border: 1px solid #aaa;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#radios label:after {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	background: red;
+	top: 6px;
+	left: 6px;
+}
+
+#radios input:checked + label:after {
+	content: "";
+}
+
+#radios input:checked + label:before {
+	border-color: #222;
+}
+
+#radios input:focus + label:before {
+	border-color: #f22;
+}
+
+
+
+
+/*
+ * Datepicker
+ */
+
+
+

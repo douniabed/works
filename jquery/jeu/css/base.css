@@ -1,0 +1,41 @@
+@import "reset.css";
+
+#jeu {
+	background: #eee;
+	margin: 50px 100px;
+	padding: 30px 50px;
+	text-align: center;
+}
+
+#jeu button {
+	background: linear-gradient(to top, #f44345, #f47070);
+	border: 1px solid #c44345;
+	color: #fff;
+	width: 100px;
+	height: 30px;
+	outline: none; /* Enlever le truc bleu sous Chrome au clic */
+}
+#jeu button:hover,
+#jeu button:focus {
+	background: linear-gradient(to top, #f45355, #f48080);
+}
+#jeu button:active {
+	background: #f45355;
+}
+
+#scores {
+	margin: 20px auto;
+	width: 50%;
+}
+
+#scores td {
+	border: 1px solid #000;
+	padding: 20px;
+}
+
+.gagne {
+	background: #75c884;
+}
+.perdu {
+	background: #fcc;
+}

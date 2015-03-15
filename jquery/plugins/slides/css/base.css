@@ -1,0 +1,95 @@
+@import "reset.css";
+
+/*
+ * Images
+ *
+
+#slider img {
+	display: none;
+	position: absolute;
+	width: 100%;
+}
+
+#slider img:first-child {
+	display: block;
+}
+
+
+
+
+
+/*
+ * Flèches
+ *
+
+.fleche {
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 200px;
+}
+
+.fleche:before {
+	content: "";
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-style: solid;
+	border-color: #888;
+	transform: rotate(-45deg);
+	top: 10px;
+}
+
+#precedent {
+	left: 50px;
+}
+#precedent:before {
+	border-width: 2px 0 0 2px;
+	left: 20px;
+}
+#suivant {
+	right: 50px;
+}
+#suivant:before {
+	border-width: 0 2px 2px 0;
+	left: 0px;
+}
+
+
+
+
+
+
+/*
+ * Vignettes
+ *
+
+#thumbnails {
+	position: absolute;
+	width: 100%;
+	top: 30px;
+	text-align: center;
+}
+
+#thumbnails img {
+	width: 100px;
+	height: 80px;
+	border: 1px solid #ccc;
+	margin: 0 10px;
+}
+
+*/
+
+
+
+/* Modifs Flexslider */
+
+/* En CSS directement, ou en JS pour être flexible */
+/* .flex-control-thumbs li {
+	width: 20%;
+} */
+
+#slider {
+	margin: auto;
+	width: 800px;
+}
