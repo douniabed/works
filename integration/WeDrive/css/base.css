@@ -1,0 +1,411 @@
+@import "reset.css";
+@import "font.css";
+
+body {
+	background: url(../img/bg.png);
+	font: 14px "WeDrive";
+}
+
+.container {
+	margin: auto;
+	width: 1090px;
+}
+
+a {
+	-webkit-transition: all .2s;
+	transition: all .2s;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+/*
+ * Header
+ */
+
+ #logo {
+ 	background: url(../img/logo.png);
+ 	width: 86px;
+ 	height: 130px;
+
+ 	float: left;
+ 	text-indent: -9999px;
+ 	margin-bottom: -10px;
+ }
+
+ #nav {
+ 	float: left;
+ 	margin: 20px 0 0 190px;
+ }
+
+ #nav a {
+ 	background: rgba(255,255,255,.5);
+ 	border-radius: 2px;
+ 	color: #594a4a;
+ 	font: 700 12px/20px "Drive";
+ 	float: left;
+ 	margin: 0 5px 0 4px;
+ 	padding: 5px 16px;
+ 	text-transform: uppercase;
+ }
+ #nav a:hover,
+ #nav a:focus {
+ 	background: #fff;
+ }
+ #nav a.active {
+ 	background: #594a4a;
+ 	color: #fff;
+ }
+
+
+ #cnx {
+ 	background: #998d8d;
+ 	box-shadow: inset 0 0 5px rgba(0,0,0,.25);
+ 	border-radius: 0 0 4px 4px;
+ 	color: #fbf9f3;
+ 	float: right;
+ 	font: 700 15px/15px "WeDrive";
+ 	text-transform: uppercase;
+
+ 	padding: 8px;
+ 	text-align: center;
+ 	width: 143px;
+ 	height: 47px;
+ }
+
+
+
+/*
+ * Main
+ */
+
+ #main {
+ 	clear: both;
+ }
+
+ #main .container {
+ 	width: 800px;
+ }
+
+ #navBlogMenu {
+ 	border-bottom: 1px solid rgba(0,0,0,.1);
+ 	float: left;
+ 	width: 595px;
+ }
+
+ #navBlogMenu li {
+ 	float: left;
+ 	margin-right: 30px;
+ }
+
+ #navBlogMenu a {
+ 	font: 13px/32px "Drive";
+ 	text-transform: uppercase;
+ }
+ #navBlogMenu a:hover,
+ #navBlogMenu a:focus {
+ 	color: #ea4d97;
+ }
+
+ #search {
+ 	float: right;
+ 	width: 200px;
+ }
+
+ #search input {
+ 	float: left;
+ }
+
+ #s {
+ 	background: #fff;
+ 	border: 1px solid #d5cccb;
+ 	border-radius: 2px;
+ 	padding: 0 12px;
+ 	height: 33px;
+ 	width: 200px;
+ }
+
+ #searchsubmit {
+ 	background: url(../img/loupe.png) center no-repeat;
+ 	border: 0;
+ 	width: 33px;
+ 	height: 33px;
+ 	margin-left: -33px;
+ }
+
+ #s::-webkit-input-placeholder {
+ 	text-transform: uppercase;
+ }
+ #s::-moz-placeholder {
+ 	text-transform: uppercase;
+ }
+ #s::-ms-input-placeholder {
+ 	text-transform: uppercase;
+ }
+ #s:focus::-webkit-input-placeholder {
+ 	opacity: .6;
+ }
+ #s:focus::-moz-placeholder {
+ 	opacity: .6;
+ }
+ #s:focus::-ms-input-placeholder {
+ 	opacity: .6;
+ }
+
+ #posts {
+ 	clear: both;
+ 	overflow: hidden;
+ }
+ .post {
+ 	height:475px;
+ 	position:relative;
+ 	box-shadow:0 0 4px rgba(0,0,0,0.1);
+ 	background:#fff;
+ 	margin: 27px 4px 65px;
+ }
+ .post:before{
+ 	position: absolute;
+ 	content: "";
+ 	background: url(../img/post.png);
+ 	bottom:-11px;
+ 	left:0;
+ 	height:11px;
+ 	width:792px;
+ }
+ .post:nth-child(2n):before{
+ 	background-position:0 -12px;
+ }
+ .post .a-la-une{
+ 	position:absolute;
+ 	top:0;
+ 	left:0;
+ }
+ .post p {
+ 	margin:5px 0 15px;
+ }
+ .infos {
+ 	position:absolute;
+ 	top:60px;
+ 	right:40px;
+ 	width:350px;
+ }
+ .infos,.categorie,.date {
+ 	color:#594a4a
+ }
+ .titre {
+ 	text-transform: uppercase;
+ 	font: 900 24px/24px "Drive";
+ 	margin-bottom: 5px;
+ }
+ .content {
+ 	text-align:justify;
+ 	color:#8b8080;
+ 	font-size:13px;
+ 	line-height:20px;
+ }
+ .date {
+ 	text-transform:uppercase;
+ 	position:absolute;
+ 	top:15px;
+ 	right:20px;
+ 	font-size:11px;
+ 	color:#8b8080;
+ }
+ .categorie {
+ 	text-transform:uppercase;
+ 	border-radius:2px;
+ 	background:#f6f6f2;
+ 	font-size:11px;
+ 	padding:5px 9px 4px 9px;
+ 	position:absolute;
+ 	bottom:30px;
+ 	left:400px;
+ }
+ .social {
+ 	position:absolute;
+ 	bottom:30px;
+ 	right:40px;
+ 	float:right;
+ }
+ .social a {
+ 	background: #e0dddd url(../img/rsx.png) no-repeat;
+ 	float:left;
+ 	width:21px;
+ 	height:21px;
+ 	border-radius: 21px;
+ 	margin-left:5px;
+ }
+ .social a:hover,
+ .social a:focus {
+ 	opacity:.8
+ }
+ .social .social-fb {
+ 	background-position:7px 4px;
+ }
+ .social .social-fb:hover,
+ .social .social-fb:focus {
+ 	background-color:#37559d;
+ }
+ .social .social-tw {
+ 	background-position:-20px 3px;
+ }
+ .social .social-tw:hover,
+ .social .social-tw:focus {
+ 	background-color:#4cc8f9;
+ }
+ .social .social-pt{
+ 	background-position:-45px 4px;
+ }
+ .social .social-pt:hover,
+ .social .social-pt:focus {
+ 	background-color:#e72020;
+ }
+
+ #nav-posts {
+ 	text-align: center;
+ 	margin-bottom: 50px;
+ }
+ #nav-posts a {
+ 	display: inline-block;
+ 	background: #a79e9d;
+ 	width: 100px;
+ 	font: 700 13px/30px "wedrive";
+ 	color: #fff;
+ 	text-transform: uppercase;
+ 	border-radius: 2px;
+ 	margin: 0 7px 0 6px;
+ }
+ #nav-posts a:hover,
+ #nav-posts a:focus {
+ 	background: #fff;
+ 	color: #a79e9d;
+ }
+
+
+
+
+/*
+ * Footer
+ */
+
+ #footer {
+ 	position: relative;
+ 	margin: auto;
+ 	width: 800px;
+ }
+
+ #fooLinks {
+ 	border-top: 1px solid rgba(0,0,0,.2);
+ 	padding-top: 6px;
+ 	height: 50px;
+ }
+
+ #mentions {
+ 	float: left;
+ 	width: 254px;
+ }
+ #mentions strong {
+ 	float: left;
+ 	font-weight: 700;
+ }
+ #wype {
+ 	color: rgba(89,74,74,.6);
+ 	font-size: .9em;
+ 	float: right;
+ 	padding-right: 8px;
+ 	position: relative;
+ }
+ #wype:hover {
+ 	-webkit-animation: tremble .3s;
+ 	animation: tremble .3s;
+ }
+
+ @keyframes tremble {
+ 	0% {
+ 		left: -2px;
+ 	}
+ 	20% {
+ 		left: 4px;
+ 	}
+ 	40% {
+ 		left: -8px;
+ 	}
+ 	60% {
+ 		left: 4px;
+ 	}
+ 	80% {
+ 		left: -2px;
+ 	}
+ 	100% {
+ 		left: 0;
+ 	}
+ }
+ @-webkit-keyframes tremble {
+ 	0% {
+ 		left: -2px;
+ 	}
+ 	20% {
+ 		left: 4px;
+ 	}
+ 	40% {
+ 		left: -8px;
+ 	}
+ 	60% {
+ 		left: 4px;
+ 	}
+ 	80% {
+ 		left: -2px;
+ 	}
+ 	100% {
+ 		left: 0;
+ 	}
+ }
+
+
+ #fooNav {
+ 	float: right;
+ 	padding-top: 8px;
+ }
+ #fooNav a {
+ 	margin-left: 30px;
+ 	color: #685a5a;
+ 	border-bottom: 1px solid transparent;
+ }
+ #fooNav a:hover,
+ #fooNav a:focus {
+ 	border-color: #a59a9a;
+ }
+
+ #retour {
+ 	position: absolute;
+ 	right: -135px;
+ 	bottom: 0;
+
+ 	width: 92px;
+ 	height: 84px;
+ 	color: #fff;
+ 	background: #ea4d97;
+
+ 	text-align: center;
+ 	font: 100 16px/15px "Drive";
+ 	text-transform: uppercase;
+ 	padding-top: 20px;
+ }
+ #retour strong {
+ 	display: block;
+ 	font-weight: 700;
+ }
+ #retour:before {
+ 	content: "";
+ 	position: absolute;
+ 	top: -25px;
+ 	left: 0;
+
+ 	border-bottom: 25px solid #ea4d97;
+ 	border-left: 46px solid transparent;
+ 	border-right: 46px solid transparent;
+ }
+ #retour:hover {
+ 	height: 90px;
+ 	padding-top: 26px;
+ }

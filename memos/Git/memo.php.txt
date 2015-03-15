@@ -1,0 +1,48 @@
+# Récupère un projet distant et crée un projet git local
+git clone https://github.com/... repertoire
+
+# Crée un dépôt git dans le répertoire courant
+# Il faut d'abord créer le répertoire, entrer dedant puis lancer la commande git init
+git init
+
+# Lie le dépôt git local à un dépôt git distant
+git remote add origin https://github.com/... 
+
+# Récupère toutes les modifications du dépôt distant vers le dépôt local
+git pull origin master
+
+# Ajoute un nouveau fichier à l'index git
+git add fichier.php
+
+# Enregistre une version du fichier
+git commit -m "Commentaire de commit" fichier.php
+
+# Affiche toutes les modifications en cours
+git status
+
+# Envoie toutes les modifs locales vers le dépot distant
+git push origin master
+
+# Liste toutes les modifications du local par rapport au distant
+git diff 
+
+# Liste toutes les modifications d'un fichier local par rapport au dernier commit
+git diff fichier.php
+
+# Liste toutes les versions d'un fichier
+git log fichier.php
+
+Ex: 
+commit 9603a8f624ce7c39da2ce870e2d5c1f01e6d542d
+Author: Webforce3 <denis.nerborac@wf3.fr>
+Date:   Wed Feb 18 15:27:52 2015 +0100
+    1ere version du fichier
+
+# Remonte le commit d'un fichier
+git checkout 9603a8f624ce7c39da2ce870e2d5c1f01e6d542d index.php
+
+# Remonte le dernier commit du fichier et annule les modifications faites depuis cette version
+git checkout -- index.php
+
+# Enregistre le checkout ci-dessus
+git commit -m "Retour a la 1ere version du fichier" index.php

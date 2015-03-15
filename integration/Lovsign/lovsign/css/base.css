@@ -1,0 +1,329 @@
+@import "reset.css";
+@import "font.css";
+
+
+/************************************ Header  ***************************************************/
+
+html {
+	background-color: #000;
+	background-image: url(../img/mobilier.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: bottom center;
+	background-size: cover;
+
+	/* Pour passer à 10px de base */
+	font-size: 62.5%;
+}
+
+body, input, textarea {
+	font-family: Lovsign;
+}
+
+
+#login {
+	background: rgba(0,0,0,.9);
+	float: right;
+	height: 50px;
+	min-width: 540px;
+	width: 43%;
+	position: relative;
+
+	/* http://css-tricks.com/rems-ems/ */
+	font-size: 1.175em;
+}
+
+#login:before {
+	content: "";
+	position: absolute;
+	left: -10px;
+
+	height: 0;
+	width: 0;
+	border-color: transparent rgba(0,0,0,.9) rgba(0,0,0,.9) transparent;
+	border-style: solid;
+	border-width: 25px 5px;
+}
+
+#acces {
+	color: #fff;
+	padding: 13px 20px;
+	text-transform: uppercase;
+	line-height: 1.15em;
+	float: left;
+}
+
+#acces strong {
+	display: block;
+	font-size: 1.36em;
+}
+
+#membre {
+	padding-top: 10px;
+}
+
+#membre input {
+	float: left;
+	margin-left: 6px;
+	height: 28px;
+	border-radius: 2px;
+}
+
+#membre input[type=text],
+#membre input[type=password] {
+	background: rgba(0,0,0,.61);
+	border: 1px solid rgba(255, 255, 255, .32);
+	color: #fff;
+	padding: 8px 10px;
+	width: 171px;
+}
+
+#membre input[type=text]::-moz-placeholder,
+#membre input[type=password]::-moz-placeholder {
+	text-transform: uppercase;
+}
+#membre input[type=text]::-webkit-input-placeholder,
+#membre input[type=password]::-webkit-input-placeholder {
+	text-transform: uppercase;
+}
+#membre input[type=text]::-ms-input-placeholder,
+#membre input[type=password]::-ms-input-placeholder {
+	text-transform: uppercase;
+}
+
+#membre input[type=text]:focus,
+#membre input[type=password]:focus {
+	background: #000;
+	width: 67px;
+}
+
+#membre input[type=submit] {
+	background: linear-gradient(to bottom, #fff, #d0d0d0);
+	border: 1px solid #b6b6b6;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+
+
+/***********************************  Main  ***************************************************/
+
+#main{
+	position: absolute;
+	height: 300px;
+	width: 80%;
+	background: rgba(250, 250, 250, 0.6);
+	margin-top: 15%;
+	background-image: url(../img/logo.png);
+	background-repeat: no-repeat;
+	background-position:10%; 
+}
+#main:before{
+	content: "";
+	float: right;
+	width: 0;
+	height: 0;
+	margin-right: -90px;
+	border-color:rgba(250, 250, 250, 0.6) transparent transparent  rgba(250, 250, 250, 0.6);
+	border-style: solid ;
+	border-width: 150px 45px; 
+}
+
+#panel {
+	display: inline-block;
+	float: right;
+	margin-top:80px;
+	margin-right: 60px;	
+}
+
+#panel h1{
+	font-size: 28px;
+	margin-bottom: 20px;
+	width:510px;
+	text-align: justify;
+}
+
+#panel #code{
+	color: #7b7b79;
+	font-size: 13.5px;
+	margin-bottom: 8px;
+}
+
+#panel input{
+	width: 255px;
+}
+
+#panel button{
+	width: 90px;
+	padding :16px;
+	
+}
+
+#panel input{
+	padding :13px;
+	margin-bottom: 7px;
+}
+
+#panel button{
+	margin-left: -6px;
+	background-color: red;
+	border-color: red;
+	color: #fff;
+}
+
+#panel [placeholder]{
+	text-transform: uppercase;
+}
+
+#panel a{
+	display: block;
+	position: absolute;
+	font-size: 12px;
+	color: #000;
+}
+
+#panel a:before{
+	content: "";
+	width: 0;
+	height: 0;
+	float: left;
+	margin-left: 0px;
+	border-color: transparent transparent transparent #000;
+	border-style: solid;
+	border-width: 6px 5px;
+}
+
+
+
+
+
+/**************************************** Footer  ********************************************/
+
+#footer {
+ 	position: absolute;
+	font-size: 1.1rem;
+ 	bottom: 10px;
+ 	width: 100%;
+ 	text-align: center;
+}
+
+#footer nav {
+	display: inline;
+}
+
+#footer a {
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	margin: 0 25px;
+}
+
+#credits {
+	display: inline-block;
+	color: rgba(245,245,245,.23);
+	margin-left: 100px;
+}
+
+
+
+
+
+
+/****************************************** Responsive  *********************************************/
+
+@media (max-width: 40em) {
+	/**********************  header  **************************/
+	#login {
+		background: linear-gradient(to bottom, #e10c19, #c60914);
+		border: 1px solid #b30f19;
+		border-radius: 0 0 3px 3px;
+		float: none;
+		margin: auto;
+		min-width: auto;
+		width: 90%;
+	}
+	#acces {
+		float: none;
+		font-size: 1.7em;
+		font-weight: 700;
+		text-align: center;
+	}
+	#login strong {
+		display: inline;
+		font-size: 1em;
+	}
+	#login:before,
+	#footer,
+	#membre {
+		display: none;
+	}
+
+	/*************************  Main  ***********************/
+	#main{
+		width:100%;
+		height: 45%;
+		background-position-x: 30%;
+		background-position-y: -80px;
+	}
+
+	#main:before{
+		display: none;	
+	}
+	 #panel{
+	 	float: none;
+	 	margin-top: 20%;
+		text-align: center;
+	 }
+
+	 #panel #code{
+	 	display: none;
+	 }
+
+	 #panel h1{
+	 	margin-left: 10%;
+		font-weight: bold;
+	 }
+
+	 #panel input{
+	 	width: 60%;
+	 	margin-left: 10%;
+	 }
+
+	 #panel button{
+	 	width: 20%;
+	 	padding: 16px;
+	 }
+
+	 #panel input{
+	 	padding: 16px;
+	 }
+	 
+	input:[placeholder]{
+		font-size: 1.3em;
+	}
+
+	#panel a {
+		margin-top: 25px;
+		margin-left: 40%;
+		background: rgba(250, 250, 250, 0.6);
+		padding: 15px;
+		font-weight: bold;
+		text-decoration: none;
+		position: relative;
+	}
+	#panel a:before{
+		display: none;
+	}
+
+	#panel a:after{
+		content: "";
+		display: block;
+		width: 133px;
+		margin-top: 4px;
+		height: 0px;
+		border-top: 2px solid #000;
+		position: absolute;
+		margin-left: 73px;
+	}
+
+}
